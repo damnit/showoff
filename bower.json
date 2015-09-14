@@ -1,0 +1,23 @@
+{
+  "name": "showoff",
+  "main": "showoff.js",
+  "version": "0.0.1",
+  "homepage": "https://github.com/damnit/showoff",
+  "authors": [
+    "Otto Hockel <hockel.otto@gmail.com>"
+  ],
+  "description": "simple single page presentation utility",
+  "keywords": [
+    "presentation",
+    "showoff",
+    "keynote"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
