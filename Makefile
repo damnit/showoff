@@ -9,7 +9,7 @@ status:
 
 develop:
 	@bower install
-	@npm install --dev
+	@npm install
 
 test: develop
 	@npm test
