@@ -1,0 +1,20 @@
+{
+  "name": "showoff",
+  "version": "0.0.1",
+  "description": "simple single page presentations",
+  "main": "showoff.js",
+  "devDependencies": {
+    "mocha-phantomjs": "^3.6.0",
+    "phantomjs": "^1.9.7-15"
+  },
+  "private": true,
+  "scripts": {
+    "test": "mocha-phantomjs test.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/damnit/showoff.git"
+  },
+  "license": "MIT",
+  "homepage": "https://github.com/damnit/showoff"
+}
