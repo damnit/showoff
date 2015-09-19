@@ -1,4 +1,9 @@
-var expect = chai.expect;
+try {
+    var expect = require("chai").expect;
+}
+catch (ReferenceError) {
+    var expect = chai.expect;
+}
 
 describe("Showoff.init()", function() {
 
@@ -38,6 +43,15 @@ describe("Showoff.init()", function() {
       Showoff.init(config);
       expect(Showoff.progress()).to.be.above(-1);
       expect(Showoff.progress()).to.be.below(101);
+    });
+  });
+  describe("#getLength", function() {
+    it("should return one on this page", function() {
+      var config = {
+          updateProgressBar: function() {return true;}
+      };
+      Showoff.init(config);
+      expect(Showoff.getLength()).to.equal(1);
     });
   });
 });

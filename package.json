@@ -4,12 +4,14 @@
   "description": "simple single page presentations",
   "main": "showoff.js",
   "dependencies": {
-    "mocha-phantomjs": "^3.6.0",
-    "phantomjs": "^1.9.7-15"
+    "chai": "^3.2.0",
+    "mocha": "^2.3.2",
+    "phantomjs": "1.9.7-15",
+    "mocha-phantomjs": "^3.6.0"
   },
   "private": true,
   "scripts": {
-    "test": "mocha-phantomjs test.html"
+    "test": "mocha-phantomjs test/test.html"
   },
   "repository": {
     "type": "git",

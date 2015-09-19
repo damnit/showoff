@@ -3,18 +3,19 @@
   <head>
     <meta charset="utf-8">
     <title>Cow tests</title>
-    <link rel="stylesheet" media="all" href="lib/mocha/mocha.css">
+    <link rel="stylesheet" media="all" href="../lib/mocha/mocha.css">
   </head>
   <body>
     <div id="mocha"><p><a href=".">Index</a></p></div>
     <div id="messages"></div>
     <div id="fixtures"></div>
-    <script src="lib/chai/chai.js"></script>
-    <script src="lib/mocha/mocha.js"></script>
+    <script src="../lib/chai/chai.js"></script>
+    <script src="../lib/mocha/mocha.js"></script>
+    <!--<script src="../lib/blanket/dist/mocha/blanket_mocha.min.js"></script>-->
     <div class="slide">
-    <script src="showoff.js"></script>
+    <script src="../showoff.js"></script>
     <script>mocha.setup('bdd')</script>
-    <script src="test_showoff.js"></script>
+    <script src="test_showoff.js" data-cover></script>
     <script>
       if ( window.mochaPhantomJS ) {
         var runner;
